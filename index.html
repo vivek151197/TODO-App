@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My TODO</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="todoLists"></div>
+      <div class="myTodo">
+        <div class="inputvalue">
+          +
+          <input
+            class="inputVal"
+            id="newtask"
+            type="text"
+            placeholder="New task..."
+            value=""
+            autofocus
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer class="DoneTasksdiv" id="DoneTasksdiv">
+    <input
+      class="doneTasks"
+      type="button"
+      value="&#128269; Show Done Tasks"
+      onclick="showHideDoneTasks()"
+    />
+    <button class="clearDoneTasks" onclick="clearDoneTask()">
+      Clear Done Tasks
+    </button>
+  </footer>
+  <button class="clearTasks" onclick="clearTask()">Clear all Tasks</button>
+  <script src="index.js"></script>
+</html>
+
+<!-- onChange = updateTitle(${task.id}) -->
+<!-- onChange = checkbox(${ task.id }) -->
